@@ -1,0 +1,21 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title th:text="${title}">page title</title>
+</head>
+<body>
+	<table>
+	<div><tr th:each="employee:${employee}"></div>
+	<div>
+	<p th:text="${employee.eno}"/>
+	</div>
+	<div>
+	<p th:text="${employee.name}"/>
+	</div>
+	<div>
+	<p th:text="${employee.salary}"/>
+	</div>
+	<a href="/emp">Submit another</a>
+	</tr>
+	</table>
+</body>
+</html>
