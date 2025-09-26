@@ -1,0 +1,72 @@
+import
+@Getter
+& vicky kumargupte
+@Setter
+@NoArgsConstructor
+@Entity
+@Table(schena = "elein denial", nane = "payer, tenalate association",
+uniqueConstraints = (@UniqueConstraint(columnNames = ("global payer.id", "plan.id", "clain address.id", "appeal 1d"
+public class PayerTemplateAssociation extends AppealTemplateBaseEntity ‹
+@CoLumn (name = "global payer.id", Length = 20)
+private String globalPayerId;
+@Colum (name = "Plan.id", Length = 20)
+private String planId;
+@Column(name = "clain.address.id", length = 20)
+private String claimAddressId;
+@Column (name = "appeal.id", length = 20)
+private String appealId;
+@OneToOne(fetich = FetchType.EAGER, cascade = CascadeType.ALL)
+@JoinColumn(name = "template-id", referencedColumnName = "id")
+private AppealPayerSpecificTemplate appealPayerSpecificTemplate;
+
+Import
+17
+18
+19
+20
+目
+21
+22
+23 O
+24
+25
+26 0
+27
+28
+29 6
+30
+31
+@Getter
+& vicky.kumargupta
+Setter
+NoArgsConstructor
+@Entity
+@Table(schema = "elain denial", name = "payer,tenplates")
+public class AppealPayerSpecificTemplate extends AppealTemplateBaseEntity {
+@Column (name = "template name", unique = true, nullable = false, length = 100)
+private String templateName;
+@CoLumn (name = "s3.Path", length = 200)
+private String sPath;
+@One ToMany (mappedBy = "appealPayerSpecificTemplate", cascade = CascadeType.ALL, fetch = FetchType. EAGER)
+private List<AppealPayerSpecificTemplateField> fields = new ArrayList<>);
+
+
+oArgsconstructor
+(Entity
+@Table(schema = "elein deniel", name = "payer, tenplate fields")
+public class AppealPayerSpecificTempLateField extends AppealTempLateBaseEntity {
+Chany Toone
+@JoinColumn (name = "temelate id")
+private AppealPayerSpecificTemplate appealPayerSpecificTemplate;
+@CoLumn (nane = "edt-field gane", Length = 200)
+private String pdfFieldName;
+@CoLumn (name = "field tyRe", Length = 100)
+private String fieldType;
+@Column (name = "options", columnDefinition = "TEXT")
+private String options;
+@Column (name = "papping,kex", columnDefinition = "TEXT")
+private String mappingKey;
+@CoLumn (name = "default value", Length = 100)
+private String defaultValue;
+@Column (name = "ceguiced")
+private Boolean renuired:
